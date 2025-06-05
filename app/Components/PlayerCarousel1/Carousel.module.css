@@ -1,0 +1,110 @@
+.container{
+  margin: auto 0;
+}
+.carouselItem{
+    height: 500px;
+    overflow: visible;
+ }
+
+ .fname, .lname{
+  font-size: 40px;
+ }
+
+ .lname{
+  margin-top: -10px;
+ }
+
+ .fname_2{
+  font-size: 22px;
+  transform: translateY(-60px);
+ }
+
+ .title{
+  color: #ff7500;
+  margin: 10px 0;
+ }
+
+ .carouselItem h3{
+    opacity: 100%;
+ }
+ .carouselItem img{
+    opacity: 40%;
+    transition: opacity 0s ease-in-out;
+ }
+
+ .activeSlide img{
+    transform: scale(1.2);
+    transition: transform 1s ease-out;
+    margin-bottom: 40px;
+    opacity: 100%;
+ }
+.activeSlide{
+    overflow: visible;
+    height: 100%;
+}
+
+.customprevarrow,
+.customnextarrow {
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(120%);
+    background-color:#ddd; 
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customprevarrow {
+  right: 30px;
+}
+
+.customnextarrow {
+  right: 100px;
+}
+
+.slick-dots {
+  bottom: 10px;
+  z-index: 1; 
+}
+
+
+@media (max-width: 991px) {
+  .customprevarrow {
+    right: 30px;
+    bottom: -15%;
+    right: 5%;
+    margin-bottom: 25px;
+  }
+
+  .customnextarrow {
+    right: 100px;
+    bottom: -15%;
+    right: 17%;
+    margin-bottom: 25px;
+}
+}
+
+@media (max-width: 576px) {
+
+  .customprevarrow {
+    right: 30px;
+    bottom: -15%;
+    left: 52%;
+    margin-bottom: 50px;
+  }
+
+  .customnextarrow {
+    right: 100px;
+    bottom: -15%;
+    left: 35%;
+    margin-bottom: 50px;
+}
+}

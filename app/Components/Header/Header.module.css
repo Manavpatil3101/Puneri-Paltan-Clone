@@ -1,0 +1,247 @@
+.header {
+    width: 100%;
+    top: 30px;
+    z-index: 9999;
+    transition: transform 1s ease;
+  }
+  
+  .scrollDown {
+    transform: translateY(-200px);
+  }
+  
+  .scrollUp {
+    transform: translateY(0);
+  }
+  
+.nav{
+    background-color: #0000004d;
+    position: relative;
+    width: 90% !important;
+    margin: auto;
+    height: 100px;
+    z-index: 9999;
+    margin: 0 auto;
+    background-image: none;
+    border: 0;
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+    transform: skewX(-15deg);
+}
+
+.logo{
+    margin: 10px 0 0 32px ;
+    transform: skewX(17deg) !important;
+}
+
+.links{
+    color: white !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: 0 30px;
+    font-style: italic;
+    transform: skewX(14deg) !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.links:hover {
+    color: #ff7500 !important;
+}
+
+
+
+.nav::before{
+    content: '';
+    background: linear-gradient(to right, #000 0%, #fff 50%, #000 100%);
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 2px;
+    right: 4px;
+    animation: blinker 3s linear infinite;
+}
+
+.nav::after{
+    content: '';
+    background: linear-gradient(to right, #000 0%, #fff 50%, #000 100%);
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 1px;
+    left: 15%;
+    animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.desc{
+    background-color: #3333;
+}
+
+.toggle{
+    color: white !important;
+}
+
+
+@media (max-width: 1440px) {
+    .nav {
+        width: 92% !important;
+        height: 100px;
+        padding: 25px;
+    }
+
+    .logo {
+        width: 160px;
+        margin-left: 30px;
+    }
+
+    .links {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .nav::before,
+    .nav::after {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .nav {
+        width: 98% !important;
+        height: 100px;
+        padding: 20px;
+        transform: none !important;
+    }
+
+    .logo {
+        width: 130px;
+        transform: none !important;
+        margin: -50px 0 0 100px;
+    }
+
+    .navlinks{
+        background-color: #000;
+        padding: 10px 0;
+    }
+
+    .links {
+        font-size: 15px;
+        letter-spacing: 2.5px;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .toggle{
+        transform: translateX(-640px);
+        margin-bottom: 40px;
+    }
+
+    .nav::before,
+    .nav::after {
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        width: 80% !important;
+        height: 90px;
+        padding: 15px 20px;
+        left: -3.5%;
+        transform: none;
+    }
+
+    .logo {
+        width: 120px;
+        margin: -50px 0 0;
+        transform: none !important;
+    }
+
+    .links {
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-right: 120px;
+        text-align: center;
+    }
+
+    .toggle{
+        transform: translateX(-620px);
+        margin-bottom: 60px !important;
+        color: white !important;
+    }
+
+    .navlinks{
+        background-color: #000;
+        padding: 10px 0;
+    }
+
+
+    .nav::before,
+    .nav::after {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header {
+        width: 100%;
+        top: 10px;
+    }
+
+    .nav {
+        width: 95% !important;
+        height: 80px;
+        transform: none;
+        padding: 10px 15px;
+        left: -7%;
+        margin-left: 55px !important;
+    }
+
+    .logo {
+        width: 95px;
+        height: auto;
+        margin: -30px 0 0;
+        transform: none !important;
+    }
+
+    .navlinks{
+        background-color: #000;
+        padding: 10px 0;
+    }
+
+    .links {
+        font-size: 12px;
+        letter-spacing: 3px;
+        text-align: center;
+        width: 80%;
+        transform: skew(-10deg) !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .nav::before,
+    .nav::after {
+        width: 80%;
+    }
+
+    .toggle {
+        border-color: white !important;
+        transform: translateX(-20px);
+        margin-bottom: 15px;
+        color: white !important;
+    }
+}

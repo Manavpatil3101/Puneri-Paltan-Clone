@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;700&display=swap');
+
+@font-face {
+    font-family: 'LoveNature';
+    src: url('/LoveNature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+.galban {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    transform: scale(1.2);
+}
+
+.gallogo {
+    position: relative;
+    top: -400px;
+    left: 270px;
+    width: 65%;
+    height: auto;
+}
+
+.galtitle {
+    font-family: 'LoveNature', sans-serif;
+    color: white;
+    font-size: 120px;
+    top: 35%;
+    letter-spacing: 16px;
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-shadow: -2px 0 24px #000;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    font-weight: 400;
+}
+
+.row{
+    width: 80%;
+}
+
+.galman {
+    position: absolute;
+    top: 194px;
+    width: 800px;
+    height: auto;
+}
+
+.btn {
+    padding: 80px 0;
+    margin: auto;
+    position: absolute;
+    top: 98%;
+    left: 44%;
+    padding-bottom: 8px;
+}
+
+
+.footlink {
+    position: relative;
+    max-width: 100%;
+    max-height: 70%;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: -120px;
+    margin-top: 100px;
+}
+
+.footlink img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footlink:hover img {
+    transform: scale(1.2);
+}
+
+.footlink h4 {
+    position: absolute;
+    top: 45%;
+    left: 34%;
+    color: white;
+    line-height: 110%;
+    margin: 1.14rem 0 .88rem 0;
+    text-transform: uppercase;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 28px;
+    z-index: 8888;
+}
+
+.footlink::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footph{
+    margin-bottom: -3px;
+  }
+
+@media (max-width: 1280px) {
+    .galban {
+        width: 100%;
+        overflow-x: hidden;
+        height: 30rem;
+    }
+
+    .galtitle {
+        font-size: 100px;
+        letter-spacing: 12px;
+        top: 20%;
+    }
+
+    .galman {
+        width: 650px;
+        top: 110px;
+    }
+
+    .btn {
+        top: 550px;
+        left: 500px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .galban {
+        height: 29rem;
+    }
+
+    .galtitle {
+        font-size: 60px;
+        top: 13%;
+        letter-spacing: 8px;
+    }
+
+    .galman {
+        width: 500px;
+        top: 100px;
+        left: 50%;
+    }
+
+    .gallogo {
+        left: 25%;
+        top: -350px; 
+    }
+
+    .btn {
+        left: 300px;
+        transform: translateY(-28px);
+    }
+
+    .footlink h4{
+        font-size: 20px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .footlink{
+        transform: translateY(-40%);
+    }
+}
+
+@media (max-width: 769px) {
+    .galban {
+        width: 100%;
+        height: 23rem;
+        overflow-x: hidden;
+    }
+
+    .gallogo {
+        top: -260px;
+        left: 60%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .galtitle {
+        font-size: 80px;
+        top: 240px;
+        left: 12%;
+        transform: translateY(-95%);
+        letter-spacing: 4px;
+        margin: 1rem 0;
+        text-shadow: -1px 0 12px #000;
+    }
+
+    .galman {
+        display: none; 
+        top: 85px;
+        left: 450px;
+    }
+
+    .btn {
+        position: relative;
+        left: 43%;
+        transform: translateY(-700px);
+        padding: 20px 0;
+    }
+
+    .row {
+        transform: translateX(50px);
+    }
+
+    .footlink{
+        width: 120%;
+        transform: translateY(-52px);
+    }
+
+    .footlink h4{
+        font-size: 20px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobban {
+        height: 100%;
+        background-position: center;
+        width: 100%;
+        transform: scale(1);
+        overflow-x: hidden;
+    }
+
+    .row{
+        transform: translateX(-5px);
+    }
+
+    .btn {
+        transform: translateY(-540px);
+        left: 25%;
+    }
+
+    .footph{
+        margin-bottom: 50px;
+      }
+    
+      .footlinkph{
+        transform: translateY(-68px);
+        height: 100%;
+        
+      }
+    
+      .footlink h4 {
+        font-size: 40px;
+        transform: translateX(-10%);
+        text-align: center;
+      }
+}

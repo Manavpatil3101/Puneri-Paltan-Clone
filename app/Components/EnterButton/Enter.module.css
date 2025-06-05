@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
+
+.btn{
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right, #df3100 0, #ff7500 100%);
+    border: 0;
+    padding: 8px 30px;
+    width: 280px;
+    border-radius: 0;
+    font-size: 20px;
+    color: white;
+    transform: skew(-15deg);
+    letter-spacing: 5px;
+    margin-left: 40px;
+}
+
+@media (max-width: 576px) {
+    .btn{
+        width: 200px;
+    }
+}
+

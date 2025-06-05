@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'LoveNature';
+    src: url('/LoveNature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+.heading{
+    font-size: 22px;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    transform: skew(-15deg);
+    text-transform: uppercase;
+    background-color: #f40;
+    color: white;
+    width: 200px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.parent{
+    height: 100vh;
+}
+
+.bg{
+    padding-bottom: 1em;
+    position: relative;  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player_full_image{
+    height: 90%;
+    width: auto;
+}
+
+.dets{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.jp{
+    display: flex;
+    text-align: center;
+    gap: 25%;
+    margin-left: -200px;
+}
+
+.ti h6{
+    font-size: 20px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 25px;
+    color: #000;
+}
+
+.table{
+    transform: translateX(270px);
+    margin: 30px 0;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+.table td{
+    padding: 0 100px;
+}
+
+.title{
+    color: #959595;
+    font-size: 16px;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+}
+
+.detail{
+    color: #000;
+    font-size: 16px;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+}
+
+.statistics{
+    font-family: 'LoveNature';
+    font-size: 110px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-weight: 400;
+    color: #ff7500;
+    margin-left: 30px;
+    animation-name: stats_heading;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.statrow1{
+    display: flex !important;
+    background-color: #edeef2;
+    padding-bottom: -100px;
+    height: fit-content;
+}
+
+.pstats h4{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-family: "Exo";
+    font-weight: 600;
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    font-size: 40px;
+    animation-name: stat;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.pstats h5{
+    font-family: "Exo";
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: .82rem 0 .656rem 0;
+}
+
+.stattitle{
+    position: relative;
+    display: flex;
+}
+
+.allstats{
+    position: absolute;
+    left: 18%;
+}
+
+.allstats2{
+    position: absolute;
+    left: 17%;
+}
+
+.allstats2 div{
+    margin:0 30px;
+}
+
+.statrow3{
+    background-color: #edeef2;
+}
+
+
+@media (max-width: 991px) {
+    .dets {
+      top: 30%;
+      padding: 2rem;
+    }
+
+    .parent{
+      width: 100%;
+      transform: translateY(-280px);
+    }
+
+    .bg{
+      height: 120%;
+    }
+    
+    .player_dets{
+      position: relative;
+      top: 170%;
+    }
+
+    .stattitle{
+        margin-bottom: -80px;
+    }
+
+    .player_full_image{
+        position: absolute;
+        height: 150% !important;
+        width: auto !important;
+        left: 20%;
+        top: 20%;
+    }
+  
+    .jp {
+      position: absolute;
+      left: -30%;
+      top: 25%;
+    }
+
+    .player_dets_2{
+      position: relative;
+      top: 36%;
+      transform: translateX(40px);
+    }
+
+    .player_hr{
+      position: relative;
+      left: -60%;
+      top: 40%;
+    }
+  
+    .table {
+      transform: none;
+      margin: 30px auto;
+    }
+  
+    .statistics {
+      font-size: 80px;
+      text-align: center;
+      margin-top: -65px;
+    }
+  
+    .allstats,
+    .allstats2 {
+      position: static;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .allstats2 div {
+      margin: 20px;
+    }
+  
+    .pstats h4 {
+      width: 130px;
+      font-size: 32px;
+    }
+  
+    .pstats h5 {
+      font-size: 16px;
+    }
+  
+    .player_full_image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  }
+
+@media (max-width: 576px) {
+    .dets {
+      padding: 1rem;
+    }
+  
+    .jp {
+      position: absolute;
+      top: 75%;
+      left: 40%;
+      display: grid;
+    }
+
+    .bg{
+      position: relative;
+      height: 176%;
+      top: -35px;
+    }
+
+    .player_hr{
+      width: 20rem !important;
+      position: relative;
+      left: 7%;
+      top: 122%;
+    }
+
+    .ti_2{
+      margin-top: -40px;
+    }
+
+    .player_dets_2{
+     top: 120%;
+     transform: translateX(125px);
+     margin-right: -100px;
+
+  }
+
+
+    .player_full_image{
+        position: absolute;
+        height: 140% !important;
+        width: auto !important;
+        left: 3%;
+        top: 90%;
+    }
+  
+    .table {
+      transform: none;
+      margin: 20px auto;
+    }
+  
+    .table td {
+      padding: 0 20px;
+    }
+
+    .statistics {
+      font-size: 60px;
+      margin-top: 90%;
+      transform: translateX(-13px);
+      letter-spacing: 3px;
+    }
+  
+    .allstats,
+    .allstats2 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .allstats2 div {
+      margin: 10px;
+    }
+  
+    .pstats h4 {
+      width: 120px;
+      font-size: 28px;
+    }
+  
+    .pstats h5 {
+      font-size: 14px;
+    }
+  
+    .player_full_image {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+  
+ 
+  
+  
+
+
+@keyframes stat {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes stats_heading {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+}
+50% {
+    opacity: 1;
+    transform: scale(1.05);
+}
+70% {
+    transform: scale(.9);
+}
+100% {
+    transform: scale(1);
+}
+}

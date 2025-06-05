@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;500;600&display=swap");
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #f40;
+  letter-spacing: 2px;
+  padding: 15px 18px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  transform: skewX(-15deg);
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #d93800;
+}
+
+
+.arrow {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdownMenu li {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  text-align: center;
+}
+
+.dropdownMenu li:hover {
+  background: #f5f5f5;
+}

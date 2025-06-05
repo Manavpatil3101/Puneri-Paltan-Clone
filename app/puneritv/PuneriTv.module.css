@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'LoveNature';
+    src: url('/LoveNature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+.galban{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    transform: scale(1.2);
+}
+
+.gallogo{
+    position: relative;
+    top: -530px;
+    left: 10%;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.galtitle{
+    font-family: 'LoveNature', sans-serif;
+    color: white;
+    font-size: 110px;
+    top: 28%;
+    letter-spacing: 16px;
+    position: absolute;
+    left: 28%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-shadow: -2px 0 24px #000;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.galman{
+    position: absolute;
+    top: 374px;
+    width: 34%;
+    height: auto;
+    right: 110px;
+    
+}
+
+.btn{
+    padding: 80px 0;
+    margin: auto;
+    position: absolute;
+    top: 98%;
+    left: 44%;
+    padding-bottom: 8px;
+}
+
+.footph{
+  margin-bottom: -3px;
+}
+
+.footlink {
+  position: relative;
+  max-width: 100%;
+  max-height: 70%;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: -120px;
+  margin-top: 100px;
+}
+
+.footlink img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footlink:hover img {
+  transform: scale(1.2);
+}
+
+.footlink h4 {
+  position: absolute;
+  top: 45%;
+  left: 34%;
+  color: white;
+  line-height: 110%;
+  margin: 1.14rem 0 .88rem 0;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 28px;
+  z-index: 8888;
+}
+
+.footlink::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.row{
+  transform: translateY(-10%);
+  margin-bottom: -150px;
+  width: 80%;
+}
+
+
+@media (max-width: 1200px) {
+  .galban {
+    height: 30rem;
+    width: 100%;
+  }
+
+  .galtitle {
+    font-size: 100px;
+    left: 40%;
+  }
+
+  .gallogo{
+    top: -350px;
+    width: 450px;
+    height: auto;
+  }
+
+  .btn{
+    transform: translateY(-70%);
+    z-index: 5;
+  }
+
+  .galman {
+    top: 280px;
+    width: 38%;
+    right: 30px;
+  }
+
+  .footlink{
+    transform: translateY(-22%);
+  }
+
+  .footlink h4 {
+    font-size: 28px;
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 992px) {
+  .galban {
+    height: 24rem;
+  }
+
+  .galtitle {
+    font-size: 80px;
+    left: 28%;
+    top: 10%;
+  }
+
+  .gallogo{
+    width: 400px;
+    height: auto;
+    top: -110%;
+    left: -2%;
+  }
+
+  .galman {
+    top: 200px;
+    width: 43%;
+    right: 30px;
+  }
+
+  .btn {
+    top: 40%;
+    left: 37%;
+  }
+
+  .row {
+    width: 85%;
+  }
+
+  .footlink{
+    transform: translateY(-40%);
+  }
+
+  .footlink h4 {
+    font-size: 26px;
+    left: 34%;
+  }
+}
+
+@media (max-width: 768px) {
+  .galban {
+    height: 25rem;
+    overflow: hidden !important;
+  }
+
+  .gallogo {
+    top: -300px;
+    height: 70%;
+    width: auto;
+    left: 10px;
+  }
+
+  .galtitle {
+    font-size: 80px;
+    left: 30%;
+    top: 120px;
+  }
+
+  .galman {
+    top: 200px;
+    width: 49%;
+    right: 20px;
+  }
+
+  .btn {
+    top: 50%;
+    left: 35%;
+  }
+
+  .footlink{
+    transform: translateY(-52px);
+  }
+
+  .footlink h4 {
+    font-size: 20px;
+    left: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .galtitle {
+    font-size: 60px;
+    left: 35%;
+  }
+
+  .btn {
+    top: 80%;
+    left: 25%;
+  }
+
+  .row {
+    transform: translateY(7%);
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .footph{
+    margin-top: 200px;
+  }
+
+  .footlinkph{
+    transform: translateY(-68px);
+    height: 100%;
+    
+  }
+
+  .footlink h4 {
+    font-size: 40px;
+    transform: translateX(-10%);
+    text-align: center;
+  }
+
+  .galman {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  .btn{
+    top: 68%;
+  }
+}
+
+@media (max-width: 390px) {
+  .btn{
+    top: 80%;
+  }
+}
