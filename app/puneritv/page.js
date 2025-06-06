@@ -8,6 +8,7 @@ import SeasonButton from "../Components/SeasonButton/SeasonButton";
 import PuneriTvCard from "../Components/PuneriTvCard/PuneriTvCard";
 import Footer from "../Components/Footer/Footer";
 import Loader from "../Components/Loading/loading";
+import Link from "next/link";
 
 
 
@@ -102,12 +103,12 @@ const PuneriTv = () => {
       </Row>
       <Row className={`g-0 ${classes.footph}`}>
         <Col xs={12} md={4} xl={4} className={classes.footlinkph}>
-          <a href="/gallery">
+          <Link href="/gallery">
             <div className={classes.footlink}>
               <img src="/puneri-gallery-2024.png" />
               <h4>Gallery</h4>
             </div>
-          </a>
+          </Link>
         </Col>
         <Col xs={12} md={4} xl={4} className={classes.footlinkph}>
           <a>
