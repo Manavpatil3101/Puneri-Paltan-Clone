@@ -36,8 +36,9 @@ const Home = () => {
         <div xs={12} md={12} xl={12} className={` ${classes.description}`}>
           Puneri Paltan is currently one of the top performing teams in the Pro
           Kabaddi League. With a mix of unstoppable energy, honed-out skills and
-          steely nerves, here's a force that consistently looks forward to
+          steely nerves, here&rsquo;s a force that consistently looks forward to
           perform better, challenge its opponents and make a difference.
+
         </div>
       </Row>
       <Row
@@ -126,9 +127,9 @@ const Home = () => {
             </div>
           </div>
           <div className={classes.newsenter}>
-            
-            <Enter btnlink="/puneritv"/>
-           
+
+            <Enter btnlink="/puneritv" />
+
           </div>
         </div>
       </Row>
@@ -138,8 +139,8 @@ const Home = () => {
             Subscribe to our newsletter
           </h3>
           <div className={classes.subdata}>
-          <input type="email" placeholder="Enter your email-id" />
-          <button>Go</button>
+            <input type="email" placeholder="Enter your email-id" />
+            <button>Go</button>
           </div>
         </div>
       </Row>
@@ -190,7 +191,7 @@ const Home = () => {
               </a>
             </div>
             <div className={classes.brands}>
-              <a href = "https://www.focus11.net/" target="_blank" className="d-grid justify-content-center cursor-pointer text-decoration-none">
+              <a href="https://www.focus11.net/" target="_blank" className="d-grid justify-content-center cursor-pointer text-decoration-none">
                 <img src="/brand7.png" />
                 <p className="text-center">Co-Partner</p>
               </a>

@@ -1,6 +1,7 @@
 import Footer from "../Components/Footer/Footer";
 import classes from "./PaltanWorld.module.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "next/link";
 
 export const metadata = {
   title: "Paltan World",
@@ -16,21 +17,21 @@ const PaltanWorld = () => {
       <Row  className={classes.paltan}>
         
         <Col xs={12} md={12} xl={6} className={`p-0 ${classes.pal1}`}>
-        <a href="/puneritv" style={{cursor:"pointer"}}>
+        <Link href="/puneritv" style={{cursor:"pointer"}}>
           <img src="/puneri-tv-2024.png" />
           <h2>
             Puneri TV
           </h2>
-          </a>
+          </Link>
         </Col>
        
         <Col  xs={12} md={12} xl={6} className={`p-0 ${classes.pal1}`}>
-        <a href="/gallery" style={{cursor:"pointer"}}>
+        <Link href="/gallery" style={{cursor:"pointer"}}>
           <img src="/puneri-gallery-2024.png" />
           <h2>
             Gallery
           </h2>
-          </a>
+          </Link>
         </Col>
       </Row>
 
